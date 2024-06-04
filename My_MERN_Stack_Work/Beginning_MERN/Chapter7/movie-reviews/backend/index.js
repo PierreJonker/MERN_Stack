@@ -10,9 +10,9 @@ async function main() {
     )
     const port = process.env.PORT || 8000
     try {
-        await MoviesDAO.injectDB(client)
         // Connect to the MongoDB cluster
         await client.connect()
+        await MoviesDAO.injectDB(client)
         app.listen(port, () => {
             console.log('server is running on port:' + port);
         })
