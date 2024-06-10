@@ -125,7 +125,6 @@ const MoviesList = (props) => {
           {movies.map((movie) => {
             return (
               <Col>
-                103 Beginning MERN Stack
                 <Card style={{ width: "18rem" }}>
                   <Card.Img src={movie.poster + "/100px180"} />
                   <Card.Body>
