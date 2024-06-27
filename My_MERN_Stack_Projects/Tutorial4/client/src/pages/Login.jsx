@@ -81,9 +81,9 @@ const Login = () => {
             onChange={handleOnChange}
           />
         </div>
-        <Link to ={'/'}>
+        {/* <Link to ={'/'}> */}
         <button type="submit">Submit</button>
-        </Link>
+        {/* </Link> */}
         <span>
           Already have an account? <Link to={"/signup"}>Signup</Link>
         </span>
